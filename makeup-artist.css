@@ -41,7 +41,7 @@
   nav.scrolled { box-shadow: 0 2px 24px rgba(42,26,20,0.08); }
   .logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 21px; font-weight: 300; letter-spacing: 2.5px;
+    font-size: 21px; font-weight: 700; letter-spacing: 2.5px;
     color: var(--deep); text-decoration: none; white-space: nowrap;
     flex-shrink: 0;
   }
@@ -355,6 +355,7 @@
   }
   .foot-logo {
     font-family: 'Cormorant Garamond', serif; font-size: 26px;
+    font-weight: 700;
     color: white; margin-bottom: 14px; display: block;
   }
   .foot-logo span { color: var(--rose); font-style: italic; }
