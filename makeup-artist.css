@@ -428,7 +428,7 @@
     .section { padding: 64px 28px; }
 
     .services-grid { grid-template-columns: 1fr 1fr; }
-    .service-card { aspect-ratio: 2/3; }
+    .service-card { aspect-ratio: 3 / 4; }
 
     .portfolio { padding: 64px 28px; }
     .portfolio-grid { grid-template-columns: 1fr 1fr; }
@@ -468,7 +468,7 @@
     .section-title { font-size: 26px !important; }
 
     .services-grid { grid-template-columns: 1fr; }
-    .service-card { aspect-ratio: 16/10; }
+    .service-card { aspect-ratio: 3 / 4; }
 
     .portfolio { padding: 48px 18px; }
     .portfolio-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
