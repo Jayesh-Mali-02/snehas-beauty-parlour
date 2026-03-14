@@ -92,7 +92,7 @@
       'Vision:  ' + (vision || 'Not specified') + '\n\n' +
       'Sent via Sneha\'s Beauty Parlour Website';
 
-    var toEmail = 'snehapatil102005@gmail.com';
+    var toEmail = 'patilsneha102005@gmail.com';
     window.location.href = 'mailto:' + toEmail +
       '?subject=' + encodeURIComponent(subject) +
       '&body=' + encodeURIComponent(body);
