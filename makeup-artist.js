@@ -70,7 +70,7 @@
   /* ── Email form validation & send ── */
   function sendEmail() {
     var name    = document.getElementById('inp-name').value.trim();
-    var email   = document.getElementById('inp-email').value.trim();
+    var address = document.getElementById('inp-address').value.trim();
     var phone   = document.getElementById('inp-phone').value.trim();
     var service = document.getElementById('inp-service').value;
     var date    = document.getElementById('inp-date').value;
@@ -78,14 +78,14 @@
 
     /* Validation */
     if (!name) { alert('Please enter your name.'); document.getElementById('inp-name').focus(); return; }
-    if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); document.getElementById('inp-email').focus(); return; }
+    if (!address) { alert('Please enter your address.'); document.getElementById('inp-address').focus(); return; }
     if (!service) { alert('Please select a service.'); document.getElementById('inp-service').focus(); return; }
 
     var subject = 'Booking Inquiry \u2013 ' + service + ' | ' + name;
     var body =
       'New Booking Inquiry \u2013 Sneha\'s Beauty Parlour\n\n' +
       'Name:    ' + name + '\n' +
-      'Email:   ' + email + '\n' +
+      'Address: ' + (address || 'Not provided') + '\n' +
       'Phone:   ' + (phone || 'Not provided') + '\n' +
       'Service: ' + service + '\n' +
       'Date:    ' + (date || 'Not specified') + '\n' +
