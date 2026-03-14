@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sneha's Beauty Parlour — Professional Makeup Artist in Surat. Bridal, HD & Special Occasion Makeup.">
+
+  <!-- Open Graph / WhatsApp / Instagram share -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sneha's Beauty Parlour — Makeup Artist in Surat">
+  <meta property="og:description" content="Luxury bridal, HD & special occasion makeup by Sneha. 100+ happy clients across Surat & Pan-India. Book your session today!">
+  <meta property="og:image" content="photos/hero_main.jpg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="1067">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="Sneha's Beauty Parlour">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sneha's Beauty Parlour — Makeup Artist in Surat">
+  <meta name="twitter:description" content="Luxury bridal, HD & special occasion makeup by Sneha. Book your session today!">
+  <meta name="twitter:image" content="photos/hero_main.jpg">
+
+  <!-- WhatsApp specifically uses og: tags above, but this helps too -->
+  <meta name="theme-color" content="#c4705a">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23c4705a'/><text y='.9em' font-size='72' x='12'>💄</text></svg>">
+<title>Sneha's Beauty Parlour</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="makeup-artist.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="#" class="logo">Sneha's <span>Beauty Parlour</span></a>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-menu" id="navMenu" role="list">
+    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+    <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+    <li><a href="#about" onclick="closeMenu()">About</a></li>
+    <li><a href="#booking" class="nav-cta" onclick="closeMenu()">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-tag">✦ Professional Makeup Artist</p>
+    <h1 class="hero-title">
+      Beauty that<br>
+      <em>tells your</em><br>
+      story
+    </h1>
+    <p class="hero-sub">Sneha's Beauty Parlour — luxury bridal, party, and everyday makeup artistry crafted for the woman who wants to feel extraordinary.</p>
+    <div class="hero-cta">
+      <a href="#booking" class="btn-primary">Book a Session</a>
+      <a href="#portfolio" class="btn-ghost">View Work</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <span class="json-badge">photos.hero_main</span>
+    <div class="photo-slot">
+      <div class="slot-icon">🖼</div>
+      <div class="slot-label">Instagram Portrait (3:4)</div>
+      <div class="slot-json">"hero_main": "photo_url_here"</div>
+      <div style="font-size:10px;letter-spacing:1px;color:rgba(42,26,20,0.35);margin-top:4px;">800 × 1067 px recommended</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat reveal">
+    <div class="stat-num">100+</div>
+    <div class="stat-label">Happy Clients</div>
+  </div>
+  <div class="stat reveal reveal-delay-1">
+    <div class="stat-num">3+</div>
+    <div class="stat-label">Years Experience</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-header reveal">
+    <span class="section-tag">✦ What I Offer</span>
+    <div class="deco-line"></div>
+    <h2 class="section-title">My <em>Signature</em> Services</h2>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card reveal">
+      <span class="json-badge">photos.services[0]</span>
+      <div class="service-photo">
+        <div class="sicon">💍</div>
+        <div class="sjson">"services[0]": "bridal_photo_url"</div>
+      </div>
+      <div class="service-overlay">
+        <div class="service-name">Bridal Makeup</div>
+        <div class="service-desc">Timeless, photography-ready bridal looks tailored to your vision and venue.</div>
+        <a href="#booking" class="service-book">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal reveal-delay-1">
+      <span class="json-badge">photos.services[1]</span>
+      <div class="service-photo">
+        <div class="sicon">📸</div>
+        <div class="sjson">"services[1]": "editorial_photo_url"</div>
+      </div>
+      <div class="service-overlay">
+        <div class="service-name">HD Makeup</div>
+        <div class="service-desc">High-definition makeup perfect for shoots, events, and special occasions.</div>
+        <a href="#booking" class="service-book">Book Now →</a>
+      </div>
+    </div>
+
+    <div class="service-card reveal reveal-delay-2">
+      <span class="json-badge">photos.services[2]</span>
+      <div class="service-photo">
+        <div class="sicon">✨</div>
+        <div class="sjson">"services[2]": "occasion_photo_url"</div>
+      </div>
+      <div class="service-overlay">
+        <div class="service-name">Special Occasions</div>
+        <div class="service-desc">Receptions, engagements, parties — every event deserves glam.</div>
+        <a href="#booking" class="service-book">Book Now →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="section-header reveal">
+    <span class="section-tag">✦ My Work</span>
+    <div class="deco-line"></div>
+    <h2 class="section-title">Portfolio <em>Gallery</em></h2>
+  </div>
+  <div class="portfolio-grid">
+
+    <div class="port-item reveal">
+      <span class="json-badge">photos.portfolio[0]</span>
+      <div class="port-photo">
+        <div class="port-icon">🖼</div>
+        <div class="port-json">"portfolio[0]": "large_photo_url"</div>
+      </div>
+      <div class="port-hover"><div class="port-label">Bridal Look</div></div>
+    </div>
+
+    <div class="port-item reveal reveal-delay-1">
+      <span class="json-badge">photos.portfolio[1]</span>
+      <div class="port-photo">
+        <div class="port-icon">🖼</div>
+        <div class="port-json">"portfolio[1]": "photo_url"</div>
+      </div>
+      <div class="port-hover"><div class="port-label">Smokey Eye</div></div>
+    </div>
+
+    <div class="port-item reveal reveal-delay-2">
+      <span class="json-badge">photos.portfolio[2]</span>
+      <div class="port-photo">
+        <div class="port-icon">🖼</div>
+        <div class="port-json">"portfolio[2]": "photo_url"</div>
+      </div>
+      <div class="port-hover"><div class="port-label">Glam Look</div></div>
+    </div>
+
+    <div class="port-item reveal reveal-delay-1">
+      <span class="json-badge">photos.portfolio[3]</span>
+      <div class="port-photo">
+        <div class="port-icon">🖼</div>
+        <div class="port-json">"portfolio[3]": "photo_url"</div>
+      </div>
+      <div class="port-hover"><div class="port-label">Natural Bridal</div></div>
+    </div>
+
+    <div class="port-item reveal reveal-delay-2">
+      <span class="json-badge">photos.portfolio[4]</span>
+      <div class="port-photo">
+        <div class="port-icon">🖼</div>
+        <div class="port-json">"portfolio[4]": "photo_url"</div>
+      </div>
+      <div class="port-hover"><div class="port-label">Party Makeup</div></div>
+    </div>
+
+  </div>
+
+  <div class="port-insta-wrap reveal">
+    <a href="https://instagram.com/snehapatil6822" target="_blank" rel="noopener" class="port-insta">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      See more on Instagram @snehapatil6822
+    </a>
+  </div>
+
+</section>
+<section class="about-section" id="about">
+  <div class="about-img-wrap reveal">
+    <span class="json-badge">photos.about_portrait</span>
+    <div class="about-img-slot">
+      <div style="font-size:50px;opacity:0.32">👤</div>
+      <div class="slot-json">"about_portrait": "photo_url_here"</div>
+    </div>
+    <div class="about-accent"></div>
+  </div>
+  <div class="reveal reveal-delay-1">
+    <span class="section-tag">✦ About Me</span>
+    <div class="deco-line about-tag-line"></div>
+    <h2 class="section-title about-title">The artist <em>behind</em> the brush</h2>
+    <p class="about-body">
+      Hello, I'm Sneha — a passionate makeup artist and beauty expert with 3+ years of experience transforming faces into works of art. My philosophy is simple: makeup should enhance who you already are, not hide it.
+    </p>
+    <p class="about-body">
+      At Sneha's Beauty Parlour, I've worked with 100+ clients — brides, fashion shoots, and special occasions across Surat and beyond. I believe every face has its own magic — my job is to reveal it.
+    </p>
+    <div class="badges">
+      <div><div class="badge-val">Bridal</div><div class="badge-label">Specialist</div></div>
+      <div><div class="badge-val">HD</div><div class="badge-label">Makeup Expert</div></div>
+      <div><div class="badge-val">100+</div><div class="badge-label">Happy Clients</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-header reveal">
+    <span class="section-tag">✦ Client Love</span>
+    <div class="deco-line"></div>
+    <h2 class="section-title">What they <em>say</em></h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="tcard reveal">
+      <div class="tgold">★★★★★</div>
+      <p class="tquote">"Sneha made me feel like an absolute queen on my wedding day. I've never felt more beautiful in my life."</p>
+      <div class="tauthor">— Priya Sharma, Bride</div>
+    </div>
+    <div class="tcard reveal reveal-delay-1">
+      <div class="tgold">★★★★★</div>
+      <p class="tquote">"She understood my vision immediately. Every look was perfect — impeccable technique and artistry."</p>
+      <div class="tauthor">— Nisha Kapoor, Client</div>
+    </div>
+    <div class="tcard reveal reveal-delay-2">
+      <div class="tgold">★★★★★</div>
+      <p class="tquote">"Booked Sneha for my sister's reception. The whole family was blown away. Truly a gifted artist."</p>
+      <div class="tauthor">— Radhika Mehta, Client</div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="booking-text reveal">
+    <span class="section-tag">✦ Let's Work Together</span>
+    <h2 class="section-title">Book your <em>session</em> today</h2>
+    <p class="booking-sub">Ready to look and feel your most beautiful? Fill out the form and I'll get back to you within 24 hours to discuss your vision and availability.</p>
+  </div>
+  <div class="booking-form reveal reveal-delay-1">
+    <input type="text" id="inp-name" placeholder="Your Full Name" autocomplete="name">
+    <input type="email" id="inp-email" placeholder="Email Address" autocomplete="email" inputmode="email">
+    <input type="tel" id="inp-phone" placeholder="Phone Number" autocomplete="tel" inputmode="tel">
+    <select id="inp-service">
+      <option value="">Select a Service</option>
+      <option value="Bridal Makeup">Bridal Makeup</option>
+      <option value="HD Makeup">HD Makeup</option>
+      <option value="Special Occasion">Special Occasion</option>
+    </select>
+    <input type="date" id="inp-date" aria-label="Preferred appointment date">
+    <textarea id="inp-vision" placeholder="Tell me about your vision..." rows="4"></textarea>
+    <button class="btn-white" onclick="sendEmail()">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+      Send Inquiry ✦
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <span class="foot-logo">Sneha's <span>Beauty Parlour</span></span>
+    <p class="foot-desc">Your trusted beauty destination for bridal, party, and everyday makeup in Surat. Making you feel extraordinary, one brushstroke at a time.</p>
+  </div>
+  <div>
+    <div class="foot-title">Services</div>
+    <ul class="foot-links">
+      <li><a href="#services">Bridal Makeup</a></li>
+      <li><a href="#services">HD Makeup</a></li>
+      <li><a href="#services">Special Occasions</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="foot-title">Navigate</div>
+    <ul class="foot-links">
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#booking">Book Now</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="foot-title">Connect</div>
+    <ul class="foot-links">
+      <li><a href="https://instagram.com/snehapatil6822" target="_blank" rel="noopener">&#64;snehapatil6822</a></li>
+      <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#110;&#101;&#104;&#97;&#112;&#97;&#116;&#105;&#108;&#49;&#48;&#50;&#48;&#48;&#53;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">snehapatil102005&#64;gmail.com</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="foot-bottom">
+  <span class="foot-copy">&#169; 2026 Sneha&#39;s Beauty Parlour. All rights reserved.</span>
+  <span class="foot-copy">Surat, Gujarat &#10022; Pan-India Bookings</span>
+</div>
+
+<script src="makeup-artist.js"></script>
+</body>
+</html>
